@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>第8周第1次课作业2</title>
+		<script>
+			function myClick(){
+				var text = document.getElementById('H').value;
+				var text1 = document.getElementById('H2');
+				var tip = document.getElementById('tip');
+				if(text !== null && text!== ""){
+					text1.value = text;
+					tip.innerHTML = "复制成功！";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="H"/>
+		<input type="button" id="btn" value="复制" onclick="myClick()"/>
+		<input type="text" id="H2" readonly="readonly"/>
+		<br />
+		<p id="tip"></p>
+	</body>
+</html>
